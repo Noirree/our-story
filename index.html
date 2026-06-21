@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- STAR BACKGROUND -->
+<div class="stars"></div>
+
+<!-- ENVELOPE INTRO -->
+<div id="intro" class="intro">
+  <div class="envelope" onclick="startStory()">💌 Open This</div>
+</div>
+
+<!-- SCENES -->
+<section class="scene active" id="scene1">
+  <h1 class="glow">For You ❤️</h1>
+  <p class="sub">A cinematic memory… just for you</p>
+  <button onclick="nextScene(2)">Begin</button>
+</section>
+
+<section class="scene" id="scene2">
+  <h2>The Beginning</h2>
+  <p id="type"></p>
+  <button onclick="nextScene(3)">Continue ➜</button>
+</section>
+
+<section class="scene" id="scene3">
+  <h2>Our 3 Weeks</h2>
+
+  <div class="card">Week 1 — Everything started softly</div>
+  <div class="card">Week 2 — We laughed more</div>
+  <div class="card">Week 3 — Something changed</div>
+
+  <button onclick="nextScene(4)">Continue ➜</button>
+</section>
+
+<section class="scene" id="scene4">
+  <h2>Why I Appreciate You</h2>
+
+  <div class="card">❤️ Your smile</div>
+  <div class="card">❤️ Your kindness</div>
+  <div class="card">❤️ Your presence</div>
+
+  <button onclick="nextScene(5)">Final Scene</button>
+</section>
+
+<section class="scene" id="scene5">
+  <div class="final">
+    <h1 class="love">I LOVE YOU ❤️</h1>
+    <p class="fade">
+      Thank you for these 3 weeks.<br>
+      I hope this is just the beginning.
+    </p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
